@@ -1,26 +1,31 @@
 {
   "name": "louie-cmt",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Louie dev commit assistant",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "standard": "17.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "standard"
-    ]
+  "bin": {
+    "louie-cmt": "./src/bin.js"
   },
   "dependencies": {
     "@bdsqqq/try": "2.3.1",
     "@clack/prompts": "0.6.1",
     "picocolors": "1.0.0"
-  }
+  },
+  "eslintConfig": {
+    "extends": [
+      "stabdard"
+    ]
+  },
+  "devDependencies": {
+    "louie-cmt": "file://.",
+    "standard": "17.0.0"
+  },
+  "scripts": {
+    "ccc": "louie-cmt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
